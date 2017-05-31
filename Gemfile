@@ -26,15 +26,15 @@ group :development, :test do
 end
 
 group :development do
-  gem 'flamegraph'
+  # gem 'flamegraph'
   gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'memory_profiler'
-  gem 'rack-mini-profiler'
+  # gem 'memory_profiler'
+  # gem 'rack-mini-profiler'
   gem 'rubocop', require: false
   gem 'rubycritic', require: false
   gem 'sandi_meter', require: false,
       github: 'roooodcastro/sandi_meter', branch: 'one-line-method-fix'
-  gem 'stackprof'
+  # gem 'stackprof'
   gem 'web-console', '>= 3.3.0'
 end
 
