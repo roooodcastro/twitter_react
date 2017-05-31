@@ -1,0 +1,22 @@
+default: &default
+  adapter: mysql
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: twitter_react_development
+  user: root
+  password: tzzk7662
+
+test:
+  <<: *default
+  database: twitter_react_test
+    user: root
+    password: tzzk7662
+
+production:
+  <<: *default
+  database: twitter_react_production
+    user: root
+    password: tzzk7662
